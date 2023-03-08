@@ -13,7 +13,7 @@ def app():
             ]
             text.text_area("Messages", value=str("\n".join(messages_str)), height=400)
 
-        openai.api_key = "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"
+        openai.api_key = api_key
         BASE_PROMPT = [{"role": "system", "content": "You are a helpful assistant."}]
 
         if "messages" not in st.session_state:
